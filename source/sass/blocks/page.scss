@@ -1,0 +1,38 @@
+.page {
+  min-height: 100vh;
+  max-width: 100%;
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+
+  font-family: $ff-Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.page__body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 100%;
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+
+  background-color: var(--background-primary);
+  color: var(--color-text);
+}
+
+.page__footer,
+.page__header {
+  flex-shrink: 0;
+}
+
+.page__main {
+  flex-grow: 1;
+}
