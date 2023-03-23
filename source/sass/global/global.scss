@@ -1,0 +1,29 @@
+/* здесь используйте глобальные селекторы img, body, html и так далее*/
+:root {
+  --neutral-gray: #d9d9d9;
+  --background-primary: #292e3c;
+  --background-secondary: #1a1e27;
+  --color-accent: #0af2dc;
+  --color-text: #c6d3d9;
+
+  & .dark {
+    --background-primary: #292e3c;
+    --background-secondary: #1a1e27;
+    --color-accent: #0af2dc;
+    --color-text: #c6d3d9;
+  }
+
+  & .light {
+    --background-primary: #e6dfda;
+    --background-secondary: #f2f2f2;
+    --color-accent: #c34109;
+    --color-text: #45577b;
+  }
+
+  & .green {
+    --background-primary: #174a41;
+    --background-secondary: #4e774f;
+    --color-accent: #eaff68;
+    --color-text: #ffffff;
+  }
+}

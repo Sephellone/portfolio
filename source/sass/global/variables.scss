@@ -1,0 +1,60 @@
+// Colors
+// ---------------------------------
+
+// Default
+
+$default-black:               #000000;
+$default-white:               #ffffff;
+$transparent:                 rgba(255, 255, 255, 0);
+
+
+
+// Project palette
+$color-neon-blue:                   #2c39f2;
+$color-torch-red:                   #ff1553;
+
+$color-alice-blue:                  #f9fbfd;
+$color-tangaroa:                    #011c40;
+$color-solitude:                    #e3ecf6;
+$color-prussian-blue:               #002b66;
+$color-quartz:                      #d8d8d9;
+
+// Цвета для подложек под картинками
+$color-pattens-blue:                #d5eaff; // преимущества
+$color-sapphire:                    #101a56; // интро и цвет галки в чекбоксе
+$color-air-force-blue:              #6488b1; // карточки в каталоге
+$color-pale-cornflower-blue:        #b5dbfa; // бронирование
+$color-romance:                     #f2efe8; // карта
+
+
+// Typography
+// ---------------------------------
+
+$ff-Montserrat:                     "Montserrat", "Arial", sans-serif;
+
+// Animation
+// ---------------------------------
+
+$tf-default:                        ease;
+$trans-default:                     0.3s $tf-default;
+
+// если требуется изинг отличный от $tf-default, то переменную называем не цифрой
+$trans-modal:                       0.6s cubic-bezier(0.55, 0, 0.1, 1);
+
+$trans-600:                         0.6s $tf-default;
+
+// Viewports
+// ---------------------------------
+
+$vp-320:                            320px;
+$vp-768:                            768px;
+$vp-1024:                           1024px;
+$vp-1280:                           1280px;
+$vp-1440:                           1440px;
+$vp-1920:                           1920px;
+
+// Retina
+// ---------------------------------
+
+$retina-dpi:                        144dpi;
+$retina-dppx:                       1.5dppx;
