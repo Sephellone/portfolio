@@ -3,7 +3,11 @@
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 150px;
+  padding: 0 10vw;
+
+  @include vp-1400 {
+    padding: 0 150px;
+  }
 
   @include vp-1023 {
     padding: 0 40px;
