@@ -25,13 +25,13 @@
     <header class="page__header header">
       <div class="container header__container">
         <!-- logo  -->
-        <a href="index.html" class="header__logo">
+        <a class="header__logo" href="index.html">
           <svg width="60" height="60" role="img" aria-label="Александра Цидулко">
             <use href="img/icons/stack.svg#logo"></use>
           </svg>
         </a>
 
-        <!-- menu -->
+        <!-- menu (all items hidden in mobile) -->
         <div class="header__nav-wrapper">
           <!-- navigation -->
           <nav class="header__nav navigation">
@@ -51,17 +51,17 @@
           <!-- theme buttons -->
           <ul class="header__themes theme">
             <li class="theme__item">
-              <button class="theme__button" type="button">
+              <button class="theme__button theme__button--dark" type="button">
                 <span class="visually-hidden">Темная тема</span>
               </button>
             </li>
             <li class="theme__item">
-              <button class="theme__button" type="button">
+              <button class="theme__button theme__button--light" type="button">
                 <span class="visually-hidden">Светлая тема</span>
               </button>
             </li>
             <li class="theme__item">
-              <button class="theme__button" type="button">
+              <button class="theme__button theme__button--green" type="button">
                 <span class="visually-hidden">Зеленая тема</span>
               </button>
             </li>
@@ -384,7 +384,7 @@
                   </a>
                 </li>
                 <li class="contacts__item">
-                  <a href="mailto:alexandra.tsidulko@gmail.com" class="contacts__link" target="_blank" rel="noopener noreferrer">
+                  <a href="mailto:alexandra.tsidulko@gmail.com" class="contacts__link">
                     <span class="visually-hidden">Email</span>
                     <svg width="30" height="30">
                       <use href="img/icons/stack.svg#icon-envelope"></use>
