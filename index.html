@@ -80,39 +80,41 @@
       <!-- main screen  -->
       <section class="hero">
         <div class="container hero__container">
-          <p class="hero__text">Привет! Я</p>
-          <h1 class="hero__title">Александра Цидулко</h1>
-          <p class="hero__subtitle">
-            <span class="hero__subtitle-hidden">начинающий</span>
-            фронтенд разработчик
-          </p>
-          <a href="#" class="hero__button button">скачать резюме</a>
-          <ul class="hero__social-list">
-            <li class="hero__social-item">
-              <a href="https://github.com/Sephellone" class="hero__social-link" target="_blank" rel="noopener noreferrer">
-                <span class="visually-hidden">GitHub</span>
-                <svg class="hero__social-icon" width="30" height="30">
-                  <use href="img/icons/stack.svg#icon-github"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="hero__social-item">
-              <a href="https://vk.com/sephellone" class="hero__social-link" target="_blank" rel="noopener noreferrer">
-                <span class="visually-hidden">VK</span>
-                <svg class="hero__social-icon" width="30" height="30">
-                  <use href="img/icons/stack.svg#icon-vk"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="hero__social-item">
-              <a href="mailto:alexandra.tsidulko@gmail.com" class="hero__social-link" target="_blank" rel="noopener noreferrer">
-                <span class="visually-hidden">Email</span>
-                <svg class="hero__social-icon" width="30" height="30">
-                  <use href="img/icons/stack.svg#icon-envelope"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          <div class="hero__description">
+            <p class="hero__text">Привет! Я</p>
+            <h1 class="hero__title">Александра Цидулко</h1>
+            <p class="hero__subtitle">
+              <span class="hero__subtitle-hidden">начинающий</span>
+              фронтенд разработчик
+            </p>
+            <a href="#" class="hero__button button">скачать резюме</a>
+            <ul class="hero__social-list">
+              <li class="hero__social-item">
+                <a href="https://github.com/Sephellone" class="hero__social-link" target="_blank" rel="noopener noreferrer">
+                  <span class="visually-hidden">GitHub</span>
+                  <svg class="hero__social-icon" width="30" height="30">
+                    <use href="img/icons/stack.svg#icon-github"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="hero__social-item">
+                <a href="https://vk.com/sephellone" class="hero__social-link" target="_blank" rel="noopener noreferrer">
+                  <span class="visually-hidden">VK</span>
+                  <svg class="hero__social-icon" width="30" height="30">
+                    <use href="img/icons/stack.svg#icon-vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="hero__social-item">
+                <a href="mailto:alexandra.tsidulko@gmail.com" class="hero__social-link" target="_blank" rel="noopener noreferrer">
+                  <span class="visually-hidden">Email</span>
+                  <svg class="hero__social-icon" width="30" height="30">
+                    <use href="img/icons/stack.svg#icon-envelope"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
 
           <svg class="hero__portrait" width="500" height="400">
             <use href="img/icons/stack.svg#hero-image"></use>
@@ -123,7 +125,7 @@
       <!-- About -->
       <section class="about" id="section-about">
         <div class="container about__container">
-          <h2 class="section-title">Обо мне</h2>
+          <h2 class="section-title about__title"><span>Обо мне</span></h2>
           <!-- text part -->
           <div class="about__description">
             <div class="about__text-wrapper">
@@ -143,7 +145,7 @@
                     <span class="skills__item-text">HTML/CSS</span>
                   </div>
                   <div class="skills__track">
-                    <div class="skills__progress"></div>
+                    <div class="skills__progress skills__progress--html"></div>
                   </div>
                 </li>
                 <li class="skills__item">
@@ -154,7 +156,7 @@
                     <span class="skills__item-text">JavaScript</span>
                   </div>
                   <div class="skills__track">
-                    <div class="skills__progress"></div>
+                    <div class="skills__progress skills__progress--js"></div>
                   </div>
                 </li>
                 <li class="skills__item">
@@ -165,7 +167,7 @@
                     <span class="skills__item-text">React.js</span>
                   </div>
                   <div class="skills__track">
-                    <div class="skills__progress"></div>
+                    <div class="skills__progress skills__progress--react"></div>
                   </div>
                 </li>
                 <li class="skills__item">
@@ -176,7 +178,7 @@
                     <span class="skills__item-text">Figma</span>
                   </div>
                   <div class="skills__track">
-                    <div class="skills__progress"></div>
+                    <div class="skills__progress skills__progress--figma"></div>
                   </div>
                 </li>
                 <li class="skills__item">
@@ -187,7 +189,7 @@
                     <span class="skills__item-text">Photoshop</span>
                   </div>
                   <div class="skills__track">
-                    <div class="skills__progress"></div>
+                    <div class="skills__progress skills__progress--photoshop"></div>
                   </div>
                 </li>
               </ul>
@@ -196,20 +198,20 @@
 
           <!-- photo part -->
           <div class="about__photo">
-            <div class="about__photo-wrapper">
-              <!-- заменить исходник и добавить picture: варианты для разных экранов и вебп -->
+            <!-- заменить исходник и добавить picture: варианты для разных экранов и вебп -->
+            <div class="about__photo-wrapper" tabindex="0">
               <img src="img/brushes-selfie.png" alt="Автопортрет." width="250" height="360">
             </div>
-
-            <a href="#" class="about__button button">Узнать еще немного</a>
           </div>
+
+          <a href="#" class="about__button button">Узнать еще немного</a>
         </div>
       </section>
 
       <!-- projects -->
       <section class="projects" id="section-projects">
         <div class="container">
-          <h2 class="section-title">Мои проекты</h2>
+          <h2 class="section-title"><span>Мои проекты</span></h2>
 
           <!-- filter buttons -->
           <ul class="projects__label-list">
@@ -359,7 +361,7 @@
       <!-- contacts section -->
       <section class="contacts" id="section-contacts">
         <div class="container contacts__container">
-          <h2 class="section-title">Контакты</h2>
+          <h2 class="section-title"><span>Контакты</span></h2>
           <div class="contacts__description">
             <p class="contacts__text">Если у&nbsp;вас остались вопросы,
               вы&nbsp;можете связаться со&nbsp;мной любым удобным вам способом</p>
@@ -422,7 +424,7 @@
 
             <div class="form__buttons-wrapper">
               <button class="button form__button" type="submit">Отправить</button>
-              <button class="button form__button" type="reset">Очистить</button>
+              <button class="button button--secondary form__button" type="reset">Очистить</button>
             </div>
           </form>
         </div>
