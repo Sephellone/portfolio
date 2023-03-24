@@ -1,0 +1,162 @@
+.about {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 45px 0;
+  background-color: var(--background-secondary);
+  overflow: hidden;
+}
+
+.about__container {
+  display: grid;
+  grid-template-columns: 1.84fr 1fr;
+  column-gap: 60px;
+  row-gap: 30px;
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+}
+
+.about__title {
+  grid-column: 1/-1;
+}
+
+.about__button {
+  width: 250px;
+  padding: 8px;
+  grid-column: 1/-1;
+  place-self: center;
+
+  @include vp-1023 {
+    width: 220px;
+    min-height: 36px;
+  }
+
+  @include vp-767 {
+    width: 200px;
+    min-height: 30px;
+    order: 2;
+  }
+}
+
+.about__photo {
+  position: relative;
+  place-self: center start;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 20px;
+    left: 20px;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--color-accent);
+    border-radius: 20px;
+
+    @include vp-767 {
+      top: 10px;
+      left: 10px;
+    }
+  }
+
+  @include vp-1023 {
+    place-self: start start;
+  }
+
+  @include vp-767 {
+    place-self: start center;
+  }
+}
+
+.about__photo-wrapper {
+  position: relative;
+  z-index: 2;
+  box-sizing: border-box;
+  width: 250px;
+  height: 360px;
+  overflow: hidden;
+  border: 1px solid var(--color-accent);
+  border-radius: 20px;
+
+  @include vp-1023 {
+    width: 200px;
+    height: 300px;
+  }
+
+  @include vp-767 {
+    width: 133px;
+    height: 181px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-accent);
+    opacity: 0.3;
+
+    transition: $trans-default;
+    transition-property: opacity;
+
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+
+    filter: grayscale(1);
+  }
+
+  @include hover-focus {
+    &::after {
+      opacity: 0;
+    }
+
+    img {
+      filter: grayscale(0);
+    }
+  }
+}
+
+.about__description {
+  max-width: 600px;
+
+  @include vp-767 {
+    max-width: 100%;
+    order: 1;
+  }
+}
+
+.about__text-wrapper {
+  margin-bottom: 32px;
+}
+
+.about__text {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  line-height: 20px;
+}
+
+.about__skills {
+  max-width: 470px;
+
+  @include vp-1023 {
+    max-width: 430px;
+  }
+
+  @include vp-767 {
+    width: 160px;
+    max-width: none;
+    margin: 0 auto;
+  }
+}

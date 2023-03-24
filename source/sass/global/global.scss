@@ -1,6 +1,6 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее*/
 :root {
-  --neutral-gray: #d9d9d9;
+  --neutral-gray: #a0a0a0;
   --background-primary: #292e3c;
   --background-secondary: #1a1e27;
   --color-accent: #0af2dc;
@@ -9,6 +9,8 @@
   --color-accent-transparent015: rgba(10, 242, 220, 0.15);
   --color-text-transparent: rgba(198, 211, 217, 0.7);
   --linear-gradient-accent: linear-gradient(0deg, rgba(10, 242, 220, 0.2) 0%, rgba(10, 242, 220, 0) 100%);
+  --gradient-accent-opacity100: linear-gradient(-90deg, rgba(10, 242, 220, 1) 0%, rgba(10, 242, 220, 0.2) 100%);
+  --gradient-accent-opacity100-vertical: linear-gradient(0deg, rgba(10, 242, 220, 1) 0%, rgba(10, 242, 220, 0.2) 100%);
 
 
   & .dark {
