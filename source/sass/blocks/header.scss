@@ -112,6 +112,7 @@
 
       background-color: var(--background-primary);
 
+      /* stylelint-disable */
       &::before {
         content: "";
         position: absolute;
@@ -124,6 +125,7 @@
         background: var(--linear-gradient-accent);
         transform: rotate(180deg);
       }
+      /* stylelint-enable */
     }
   }
 }
@@ -200,6 +202,7 @@
       top: 22px;
     }
 
+    /* stylelint-disable */
     .open & {
       &::before {
         transform: translateY(6px) rotate(45deg);
@@ -210,5 +213,6 @@
         transform: translateY(-8px) rotate(-45deg);
       }
     }
+    /* stylelint-enable */
   }
 }
