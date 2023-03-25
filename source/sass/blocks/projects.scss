@@ -1,0 +1,124 @@
+.projects {
+  padding: 45px 0;
+
+  @include vp-767 {
+    padding-top: 30px;
+  }
+}
+
+.projects__label-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 35px 0;
+  padding: 0;
+  list-style-type: none;
+
+  @include vp-1023 {
+    margin: 20px 0;
+  }
+}
+
+.projects__label {
+  margin: 0;
+  padding: 5px;
+  margin-right: 10px;
+
+  @include vp-1023 {
+    margin-right: 8px;
+    padding: 5px 0;
+  }
+
+  @include vp-767 {
+    margin-right: 4px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.projects__label-button {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 15px;
+  appearance: none;
+  box-shadow: none;
+
+  font-family: $ff-Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: var(--color-text-transparent);
+  color: var(--background-secondary);
+  cursor: pointer;
+
+  &[data-label="active"] {
+    background-color: var(--color-accent);
+    box-shadow: 2px 3px 2px 2px var(--background-secondary);
+  }
+
+  @include hover-focus {
+    background-color: var(--color-text);
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  @include vp-1023 {
+    padding: 8px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+.projects__card-list {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 55px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 4%;
+  row-gap: 40px;
+  list-style-type: none;
+
+  @include vp-1023 {
+    max-width: 680px;
+    margin: 0 auto;
+    margin-bottom: 55px;
+    padding: 0;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  @include vp-767 {
+    max-width: 320px;
+    grid-template-columns: 1fr;
+    margin-bottom: 40px;
+  }
+}
+
+.projects__card-item {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  place-self: stretch;
+}
+
+.projects__button {
+  margin: 0 auto;
+  padding: 10px;
+  width: 250px;
+
+  @include vp-1023 {
+    width: 200px;
+  }
+}
