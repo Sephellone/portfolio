@@ -90,26 +90,38 @@
   }
 
   @include vp-767 {
-    display: none;
+    visibility: hidden;
+    width: 0.1px;
+    opacity: 0;
+
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    max-width: none;
+    min-height: 420px;
+    max-height: 100vh;
+    padding-top: 56px;
+    padding-left: 25px;
+    padding-bottom: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow-y: scroll;
+    transition: $trans-default;
+    transition-property: opacity width;
+    scrollbar-width: none;
+
+    /* stylelint-disable-next-line */
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
     .open & {
-      position: absolute;
-      display: flex;
-      z-index: 1;
-      top: 0;
-      right: 0;
-      min-width: 260px;
-      max-width: none;
-      min-height: 420px;
-      max-height: 100vh;
-      padding-top: 56px;
-      padding-left: 25px;
-      padding-bottom: 30px;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      overflow-y: scroll;
-
+      visibility: visible;
+      opacity: 1;
+      width: 260px;
       background-color: var(--background-primary);
 
       /* stylelint-disable */
