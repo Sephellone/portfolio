@@ -213,7 +213,8 @@
   padding: 5px;
   color: var(--color-text);
 
-  @include hover-focus {
+  &:hover,
+  &:focus {
     color: var(--color-accent);
   }
 

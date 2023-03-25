@@ -58,7 +58,8 @@
     height: 100%;
   }
 
-  @include hover-focus {
+  &:hover,
+  &:focus {
     color: var(--color-text);
     filter: drop-shadow(0 0 10px var(--color-accent));
   }
@@ -184,7 +185,8 @@
     appearance: none;
     cursor: pointer;
 
-    @include hover-focus {
+    &:hover,
+    &:focus {
       background-color: var(--color-accent-transparent02);
     }
 

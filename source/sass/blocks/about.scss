@@ -116,7 +116,8 @@
     filter: grayscale(1);
   }
 
-  @include hover-focus {
+  &:hover,
+  &:focus {
     &::after {
       opacity: 0;
     }

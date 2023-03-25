@@ -62,7 +62,8 @@
     box-shadow: 2px 3px 2px 2px var(--background-secondary);
   }
 
-  @include hover-focus {
+  &:hover,
+  &:focus {
     background-color: var(--color-text);
   }
 

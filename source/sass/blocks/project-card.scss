@@ -96,7 +96,8 @@
     margin-right: 0;
   }
 
-  @include hover-focus {
+  &:hover,
+  &:focus {
     background-color: var(--color-accent-transparent02);
   }
 

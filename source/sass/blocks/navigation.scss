@@ -48,8 +48,8 @@
 
   border-radius: 5px;
 
-  @include hover-focus {
-    outline: none;
+  &:hover,
+  &:focus {
     background-color: var(--color-accent-transparent015);
   }
 

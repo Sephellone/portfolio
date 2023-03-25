@@ -24,7 +24,8 @@
     background-color: var(--color-text);
   }
 
-  @include hover-focus {
+  &:hover,
+  &:focus {
     filter: drop-shadow(0 0 7px var(--color-accent));
   }
 
