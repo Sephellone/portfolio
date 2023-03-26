@@ -6,6 +6,15 @@
   background-color: var(--background-secondary);
   border-radius: 10px;
   overflow: hidden;
+
+  transition: $trans-default;
+  transition-property: filter transform;
+
+  &:hover,
+  &:focus-within {
+    filter: drop-shadow(0 0 10px var(--color-accent-transparent02));
+    transform: scale(1.05);
+  }
 }
 
 .project-card__label-list {

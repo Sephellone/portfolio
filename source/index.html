@@ -22,7 +22,7 @@
 
   <body class="page__body dark">
     <!-- header  -->
-    <header class="page__header header">
+    <header class="page__header header" data-header>
       <div class="container header__container">
         <!-- logo  -->
         <a class="header__logo" href="index.html">
@@ -37,13 +37,13 @@
           <nav class="header__nav navigation">
             <ul class="navigation__list">
               <li class="navigation__item">
-                <a href="#section-about" class="navigation__link">Обо мне</a>
+                <a href="#section-about" class="navigation__link" data-close-menu>Обо мне</a>
               </li>
               <li class="navigation__item">
-                <a href="#section-projects" class="navigation__link">Проекты</a>
+                <a href="#section-projects" class="navigation__link" data-close-menu>Проекты</a>
               </li>
               <li class="navigation__item">
-                <a href="#section-contacts" class="navigation__link">Контакты</a>
+                <a href="#section-contacts" class="navigation__link" data-close-menu>Контакты</a>
               </li>
             </ul>
           </nav>
@@ -51,17 +51,17 @@
           <!-- theme buttons -->
           <ul class="header__themes theme">
             <li class="theme__item">
-              <button class="theme__button theme__button--dark" type="button">
+              <button class="theme__button theme__button--dark" type="button" data-theme="dark">
                 <span class="visually-hidden">Темная тема</span>
               </button>
             </li>
             <li class="theme__item">
-              <button class="theme__button theme__button--light" type="button">
+              <button class="theme__button theme__button--light" type="button" data-theme="light">
                 <span class="visually-hidden">Светлая тема</span>
               </button>
             </li>
             <li class="theme__item">
-              <button class="theme__button theme__button--green" type="button">
+              <button class="theme__button theme__button--green" type="button" data-theme="green">
                 <span class="visually-hidden">Зеленая тема</span>
               </button>
             </li>
@@ -69,7 +69,7 @@
         </div>
 
         <!-- menu button -->
-        <button class="header__menu-toggler" type="button">
+        <button class="header__menu-toggler" type="button" data-burger>
           <span class="visually-hidden">Меню</span>
         </button>
       </div>
@@ -406,7 +406,7 @@
               </li>
             </ul>
           </div>
-          <form class="contacts__form form" action="https://echo.htmlacademy.ru/" method="post">
+          <form class="contacts__form form" action="https://formspree.io/f/xjvdelbn" method="post">
             <p class="form__text">Или напишите мне сообщение здесь</p>
 
             <label class="form__label" for="name">
@@ -445,6 +445,6 @@
       </div>
     </footer>
 
-    <script src="./js/script.js" type="module"></script>
+    <script src="./js/main.js" type="module"></script>
   </body>
 </html>
