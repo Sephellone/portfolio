@@ -67,7 +67,7 @@ const PROJECTS = [
 
   {
     title: 'Keksobooking',
-    labels: ['html-academy', 'html', 'javascript'],
+    labels: ['html-academy', 'javascript'],
     image: 'img/projects/keksobooking.jpg',
     alt: 'Сайт финансовой пирамиды для сбора средств на осуществление мечты. На скриншоте - главный экран сайта и слайдер активных проектов.',
     srcset: 'img/projects/keksobooking@2x.jpg 2x',

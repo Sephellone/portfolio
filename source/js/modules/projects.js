@@ -37,7 +37,9 @@ const renderProjects = (projectsArray) => {
   };
 };
 
-const showMoreClickHandler = () => {
+const showMoreClickHandler = (evt) => {
+  evt.preventDefault();
+
   if (projectsForRender.length >= 6) {
     if (!showMoreButton.classList.contains('open')) {
       maxProjectsShown = projectsForRender.length;

@@ -231,126 +231,72 @@
               <button class="projects__label-button" type="button" data-filter="javascript">JavaScript</button>
             </li>
             <li class="projects__label">
-              <button class="projects__label-button" type="button" data-filter="design">Design</button>
+              <button class="projects__label-button" type="button" data-filter="design">Дизайн</button>
             </li>
           </ul>
 
           <!-- project cards (just mocks, will be rendered by script) -->
           <ul class="projects__card-list" data-projects-list>
             <li class="projects__card-item">
-              <div class="project-card" data-card-label="html-academy html javascript">
+              <div class="project-card">
                 <ul class="project-card__label-list">
-                  <li class="project-card__label">HTML academy</li>
-                  <li class="project-card__label">HTML/CSS</li>
-                  <li class="project-card__label">JavaScript</li>
+                  <li class="project-card__label" data-card-label="html-academy">HTML academy</li>
+                  <li class="project-card__label" data-card-label="html">HTML/CSS</li>
+                  <li class="project-card__label" data-card-label="javascript">JavaScript</li>
                 </ul>
-
-                <h3 class="project-card__title">Круизы в Антарктику</h3>
+                <h3 class="project-card__title">Antarctica</h3>
                 <div class="project-card__image-wrapper">
-                  <!-- добавить picture с разными размерами и webp -->
                   <picture>
-                    <source type="image/webp" srcset="img/projects/project-antarctica2.webp 1x, img/projects/project-antarctica2@2x.webp 2x">
-                    <img src="img/projects/project-antarctica2.jpg" class="project-card__image" width="300" height="194" alt="">
+                    <source type="image/webp" srcset="img/projects/antarctica.webp 1x, img/projects/antarctica@2x.webp 2x">
+                    <img src="./Александра Цидулко_ фронтенд разработчик_files/antarctica.jpg" class="project-card__image" width="300" height="194" alt="" srcset="img/projects/antarctica@2x.jpg 2x" loading="lazy">
                   </picture>
                 </div>
                 <div class="project-card__buttons-wrapper">
-                  <a class="project-card__button" href="#">Сайт</a>
-                  <a class="project-card__button" href="#">Github</a>
+                  <a class="project-card__button" data-website="website" href="https://sephellone.github.io/Antarctica/">Сайт</a>
+                  <a class="project-card__button" data-website="github" href="https://github.com/Sephellone/Antarctica">Github</a>
                 </div>
               </div>
             </li>
-            <li class="projects__card-item">
-              <div class="project-card" data-card-label="html-academy html javascript">
-                <ul class="project-card__label-list">
-                  <li class="project-card__label">HTML academy</li>
-                  <li class="project-card__label">HTML/CSS</li>
-                  <li class="project-card__label">JavaScript</li>
-                </ul>
 
-                <h3 class="project-card__title">Круизы в Антарктику</h3>
+            <li class="projects__card-item">
+              <div class="project-card">
+                <ul class="project-card__label-list">
+                  <li class="project-card__label" data-card-label="personal">Личный</li>
+                  <li class="project-card__label" data-card-label="html">HTML/CSS</li>
+                  <li class="project-card__label" data-card-label="javascript">JavaScript</li>
+                  <li class="project-card__label" data-card-label="design">Design</li>
+                </ul>
+                <h3 class="project-card__title">Портфолио</h3>
                 <div class="project-card__image-wrapper">
-                  <!-- добавить picture с разными размерами и webp -->
-                  <img src="img/projects/project-antarctica2.jpg" class="project-card__image" width="300" height="194" alt="">
+                  <picture>
+                    <source type="image/webp" srcset="img/projects/portfolio.webp 1x, img/projects/portfolio@2x.webp 2x">
+                    <img src="./Александра Цидулко_ фронтенд разработчик_files/portfolio.jpg" class="project-card__image" width="300" height="194" alt="" srcset="img/projects/portfolio@2x.jpg 2x" loading="lazy">
+                  </picture>
                 </div>
                 <div class="project-card__buttons-wrapper">
-                  <a class="project-card__button" href="#">Сайт</a>
-                  <a class="project-card__button" href="#">Github</a>
+                  <a class="project-card__button" data-website="website" href="https://sephellone.github.io/portfolio/">Сайт</a>
+                  <a class="project-card__button" data-website="github" href="https://github.com/Sephellone/portfolio">Github</a>
                 </div>
               </div>
             </li>
-            <li class="projects__card-item">
-              <div class="project-card" data-card-label="html-academy html javascript">
-                <ul class="project-card__label-list">
-                  <li class="project-card__label">HTML academy</li>
-                  <li class="project-card__label">HTML/CSS</li>
-                  <li class="project-card__label">JavaScript</li>
-                </ul>
 
-                <h3 class="project-card__title">Круизы в Антарктику</h3>
+            <li class="projects__card-item">
+              <div class="project-card">
+                <ul class="project-card__label-list">
+                  <li class="project-card__label" data-card-label="html-academy">HTML academy</li>
+                  <li class="project-card__label" data-card-label="html">HTML/CSS</li>
+                  <li class="project-card__label" data-card-label="javascript">JavaScript</li>
+                </ul>
+                <h3 class="project-card__title">Smart Device</h3>
                 <div class="project-card__image-wrapper">
-                  <!-- добавить picture с разными размерами и webp -->
-                  <img src="img/projects/project-antarctica2.jpg" class="project-card__image" width="300" height="194" alt="">
+                  <picture>
+                    <source type="image/webp" srcset="img/projects/smart-device.webp 1x, img/projects/smart-device@2x.webp 2x">
+                    <img src="./Александра Цидулко_ фронтенд разработчик_files/smart-device.jpg" class="project-card__image" width="300" height="194" alt="" srcset="img/projects/smart-device@2x.jpg 2x" loading="lazy">
+                  </picture>
                 </div>
                 <div class="project-card__buttons-wrapper">
-                  <a class="project-card__button" href="#">Сайт</a>
-                  <a class="project-card__button" href="#">Github</a>
-                </div>
-              </div>
-            </li>
-            <li class="projects__card-item">
-              <div class="project-card" data-card-label="html-academy html javascript">
-                <ul class="project-card__label-list">
-                  <li class="project-card__label">HTML academy</li>
-                  <li class="project-card__label">HTML/CSS</li>
-                  <li class="project-card__label">JavaScript</li>
-                </ul>
-
-                <h3 class="project-card__title">Круизы в Антарктику</h3>
-                <div class="project-card__image-wrapper">
-                  <!-- добавить picture с разными размерами и webp -->
-                  <img src="img/projects/project-antarctica2.jpg" class="project-card__image" width="300" height="194" alt="">
-                </div>
-                <div class="project-card__buttons-wrapper">
-                  <a class="project-card__button" href="#">Сайт</a>
-                  <a class="project-card__button" href="#">Github</a>
-                </div>
-              </div>
-            </li>
-            <li class="projects__card-item">
-              <div class="project-card" data-card-label="html-academy html javascript">
-                <ul class="project-card__label-list">
-                  <li class="project-card__label">HTML academy</li>
-                  <li class="project-card__label">HTML/CSS</li>
-                  <li class="project-card__label">JavaScript</li>
-                </ul>
-
-                <h3 class="project-card__title">Круизы в Антарктику</h3>
-                <div class="project-card__image-wrapper">
-                  <!-- добавить picture с разными размерами и webp -->
-                  <img src="img/projects/project-antarctica2.jpg" class="project-card__image" width="300" height="194" alt="">
-                </div>
-                <div class="project-card__buttons-wrapper">
-                  <a class="project-card__button" href="#">Сайт</a>
-                  <a class="project-card__button" href="#">Github</a>
-                </div>
-              </div>
-            </li>
-            <li class="projects__card-item">
-              <div class="project-card" data-card-label="html-academy html javascript">
-                <ul class="project-card__label-list">
-                  <li class="project-card__label">HTML academy</li>
-                  <li class="project-card__label">HTML/CSS</li>
-                  <li class="project-card__label">JavaScript</li>
-                </ul>
-
-                <h3 class="project-card__title">Круизы в Антарктику</h3>
-                <div class="project-card__image-wrapper">
-                  <!-- добавить picture с разными размерами и webp -->
-                  <img src="img/projects/project-antarctica2.jpg" class="project-card__image" width="300" height="194" alt="">
-                </div>
-                <div class="project-card__buttons-wrapper">
-                  <a class="project-card__button" href="#">Сайт</a>
-                  <a class="project-card__button" href="#">Github</a>
+                  <a class="project-card__button" data-website="website" href="https://sephellone.github.io/smartDevices/">Сайт</a>
+                  <a class="project-card__button" data-website="github" href="https://github.com/Sephellone/smartDevices">Github</a>
                 </div>
               </div>
             </li>
