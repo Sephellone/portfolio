@@ -89,6 +89,8 @@
   column-gap: 4%;
   row-gap: 40px;
   list-style-type: none;
+  transition: $trans-default;
+  transition-property: height;
 
   @include vp-1023 {
     max-width: 680px;

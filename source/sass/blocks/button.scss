@@ -33,6 +33,11 @@
     opacity: 0.5;
   }
 
+  &:disabled {
+    background-color: var(--color-accent-transparent02);
+    pointer-events: none;
+  }
+
   @include vp-1023 {
     padding: 12px;
     font-size: 14px;
