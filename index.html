@@ -17,6 +17,7 @@
     <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 
     <title>Александра Цидулко: фронтенд разработчик</title>
+    <meta name="description" content="Портфолио фронтенд разработчика">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -355,7 +356,7 @@
               </li>
             </ul>
           </div>
-          <form class="contacts__form form" action="https://formspree.io/f/xjvdelbn" method="post">
+          <form class="contacts__form form" action="https://formspree.io/f/xjvdelbn" method="post" id="contacts-form">
             <p class="form__text">Или напишите мне сообщение здесь</p>
 
             <label class="form__label" for="name">
@@ -376,6 +377,8 @@
               <button class="button form__button" type="submit">Отправить</button>
               <button class="button button--secondary form__button" type="reset">Очистить</button>
             </div>
+
+            <!-- <div class="form__submit-message fail">Что-то пошло не так, попробуйте еще раз</div> -->
           </form>
         </div>
       </section>
