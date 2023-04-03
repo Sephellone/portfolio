@@ -8,6 +8,7 @@ const themeButtonClickHandler = (evt) => {
     document.body.classList.remove(item);
   });
   document.body.classList.add(newTheme);
+  evt.target.blur();
 };
 
 const initThemeButtons = () => {

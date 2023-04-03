@@ -60,6 +60,7 @@
   &[data-label="active"] {
     background-color: var(--color-accent);
     box-shadow: 2px 3px 2px 2px var(--background-secondary);
+    pointer-events: none;
   }
 
   &:hover,
@@ -68,7 +69,7 @@
   }
 
   &:active {
-    opacity: 0.5;
+    opacity: 0.3;
   }
 
   @include vp-1023 {

@@ -1,7 +1,7 @@
 import { PROJECTS } from './projects-data.js';
 
 const projectsList = document.querySelector('[data-projects-list]');
-const cardTemplate = document.querySelector('#card').content.querySelector('.projects__card-item');
+const card = document.querySelector('#card');
 const showMoreButton = document.querySelector('[data-projects-show-more]');
 const labelButtons = document.querySelectorAll('[data-filter]');
 
@@ -24,6 +24,7 @@ const renderProjects = (projectsArray) => {
   for (let i = 0; i < maxProjectsShown; i++) {
     const project = projectsArray[i];
     if (project) {
+      const cardTemplate = card.content.querySelector('.projects__card-item');
       const newProjectCard = cardTemplate.cloneNode(true);
       newProjectCard.querySelector('.project-card__title').textContent = project.title;
       newProjectCard.querySelector('img').src = project.image;
@@ -85,7 +86,7 @@ const labelButtonsClickHandler = (evt) => {
 };
 
 const initProjectsSection = () => {
-  if (projectsList && cardTemplate) {
+  if (projectsList && card) {
     renderProjects(projectsForRender);
   }
 

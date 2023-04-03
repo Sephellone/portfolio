@@ -32,6 +32,7 @@
 }
 
 .navigation__link {
+  position: relative;
   box-sizing: border-box;
   display: inline-flex;
   align-items: center;
@@ -55,6 +56,24 @@
 
   &:active {
     opacity: 0.5;
+  }
+
+  &--current {
+    color: var(--color-text);
+    pointer-events: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 5px;
+      left: 50%;
+      display: block;
+      height: 1px;
+      width: 90%;
+      background-color: var(--color-text);
+
+      transform: translateX(-50%);
+    }
   }
 
   @include vp-1023 {

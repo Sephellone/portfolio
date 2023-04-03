@@ -201,11 +201,14 @@
           <div class="about__photo">
             <!-- заменить исходник и добавить picture: варианты для разных экранов и вебп -->
             <div class="about__photo-wrapper">
-              <img src="img/brushes-selfie.png" alt="Автопортрет." width="250" height="360">
+              <picture>
+                <source type="image/webp" srcset="img/photo.webp 1x, img/photo@2x.webp 2x">
+                <img src="img/photo.jpg" alt="Автопортрет." width="250" height="360" srcset="img/photo@2x.jpg 2x">
+              </picture>
             </div>
           </div>
 
-          <a href="#" class="about__button button">Узнать еще немного</a>
+          <a href="about.html" class="about__button button">Узнать еще немного</a>
         </div>
       </section>
 
@@ -377,8 +380,6 @@
               <button class="button form__button" type="submit">Отправить</button>
               <button class="button button--secondary form__button" type="reset">Очистить</button>
             </div>
-
-            <!-- <div class="form__submit-message fail">Что-то пошло не так, попробуйте еще раз</div> -->
           </form>
         </div>
       </section>
@@ -415,7 +416,7 @@
             </picture>
           </div>
           <div class="project-card__buttons-wrapper">
-            <a class="project-card__button" data-website="website" href="#">Сайт</a>
+            <a class="project-card__button" data-website="website" href="#" target="_blank"  rel="noopener noreferrer">Сайт</a>
             <a class="project-card__button" data-website="github" href="#">Github</a>
           </div>
         </div>
