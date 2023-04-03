@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#292e3c">
+
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+    <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="preload" href="fonts/Montserrat-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-Medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+
+    <title>Обо мне</title>
+    <meta name="description" content="Биография и интересы">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body class="page__body dark">
+    <!-- header  -->
+    <header class="page__header header" data-header>
+      <div class="container header__container">
+        <!-- logo  -->
+        <a class="header__logo" href="index.html">
+          <svg width="60" height="60" role="img" aria-label="Александра Цидулко">
+            <use href="img/icons/stack.svg#logo"></use>
+          </svg>
+        </a>
+
+        <!-- menu (all items hidden in mobile) -->
+        <div class="header__nav-wrapper">
+          <!-- navigation -->
+          <nav class="header__nav navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="index.html" class="navigation__link" data-close-menu>Главная</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link navigation__link--current" data-close-menu>Обо мне</a>
+              </li>
+              <li class="navigation__item">
+                <a href="index.html#section-projects" class="navigation__link" data-close-menu>Проекты</a>
+              </li>
+              <li class="navigation__item">
+                <a href="index.html#section-contacts" class="navigation__link" data-close-menu>Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- theme buttons -->
+          <ul class="header__themes theme">
+            <li class="theme__item">
+              <button class="theme__button theme__button--dark" type="button" data-theme="dark">
+                <span class="visually-hidden">Темная тема</span>
+              </button>
+            </li>
+            <li class="theme__item">
+              <button class="theme__button theme__button--light" type="button" data-theme="light">
+                <span class="visually-hidden">Светлая тема</span>
+              </button>
+            </li>
+            <li class="theme__item">
+              <button class="theme__button theme__button--green" type="button" data-theme="green">
+                <span class="visually-hidden">Зеленая тема</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- menu button -->
+        <button class="header__menu-toggler" type="button" data-burger>
+          <span class="visually-hidden">Меню</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- main  -->
+    <main class="page__main about-page">
+      <section class="bio">
+        <div class="bio__decription">
+          <h1 class="bio__title">Меня зовут Александра Цидулко, я&nbsp;начинающий фронтенд разработчик.</h1>
+          <p class="bio__text">У&nbsp;меня всегда вызывали интерес web-технологии, и&nbsp;год назад я&nbsp;решила связать с&nbsp;ними свою профессиональную деятельность.</p>
+          <p class="bio__text">Наверное, лучше всего в&nbsp;жизни у&nbsp;меня получается учиться новому, поэтому обучение на&nbsp;курсе &laquo;фронтенд-разработчик&raquo; прошло как увлекательное приключение.</p>
+          <p class="bio__text">Сейчас я&nbsp;продолжаю развиваться, узнавать новые подходы к&nbsp;разработке и&nbsp;пробовать применять их&nbsp;в&nbsp;своих проектах.</p>
+          <p class="bio__text">Несмотря на&nbsp;всегда присутствоваший у&nbsp;меня интерес к&nbsp;IT, и&nbsp;web в&nbsp;частности, при поступлении в&nbsp;университет я&nbsp;выбрала факультет естественных наук, успешно окончила специалитет по&nbsp;специальности &laquo;молекулярная биология&raquo;, аспирантуру по&nbsp;специальности &laquo;биохимия&raquo; и&nbsp;защитила кандидатскую диссертацию. После чего решила кардинально сменить направление работы, и&nbsp;выбрала фронтенд разработку.</p>
+          <p class="bio__text bio__text--accent">Новый день&nbsp;&mdash; новые возможности :D</p>
+        </div>
+
+        <div class="bio__photo-wrapper">
+          <picture>
+            <source type="image/webp" srcset="img/about-photo.webp 1x, img/about-photo@2x.webp 2x">
+            <img class="bio__photo" src="img/about-photo.jpg" alt="Автопортрет." width="420" height="550" srcset="img/about-photo@2x.jpg 2x">
+          </picture>
+        </div>
+      </section>
+
+      <section class="stack">
+        <h2 class="about-page__title stack__title">Мой стек технологий</h2>
+        <ul class="stack__list">
+          <li class="stack__item">HTML5</li>
+          <li class="stack__item">CSS3 (sass / scss)</li>
+          <li class="stack__item">адаптивная верстка, кроссбраузерная верстка, БЭМ</li>
+          <li class="stack__item">JavaScript (ES5 / ES6)</li>
+          <li class="stack__item">Git, GitHub</li>
+          <li class="stack__item">Figma, Photoshop, Illustrator</li>
+        </ul>
+      </section>
+
+      <section class="education">
+        <h2 class="about-page__title">Образование</h2>
+        <ul class="education__list">
+          <li class="education__item">
+            <h3 class="education__year">2022-2023</h3>
+            <div class="education__description" data-accordeon-element>
+              <p class="education__text">Онлайн курс HTML academy <br>Профессия “Фронтенд-разработчик”</p>
+              <ul class="education__certificates" data-accordeon-content>
+                <li class="education__certificate-item">
+                  <a class="education__certificate-wrapper" href="pdf/html.pdf" target="_blank">
+                    <picture>
+                      <source type="image/webp" srcset="img/certificates/cert-html1.webp 1x, img/certificates/cert-html1@2x.webp 2x">
+                      <img class="education__image" src="img/certificates/cert-html1.jpg" alt="HTML и CSS. Профессиональная вёрстка сайтов." width="150" height="209" srcset="img/certificates/cert-html1@2x.jpg">
+                    </picture>
+                  </a>
+                </li>
+
+                <li class="education__certificate-item">
+                  <a class="education__certificate-wrapper" href="pdf/html1.pdf" target="_blank">
+                    <picture>
+                      <source type="image/webp" srcset="img/certificates/cert-html2.webp 1x, img/certificates/cert-html2@2x.webp 2x">
+                      <img class="education__image" src="img/certificates/cert-html2.jpg" alt="HTML и CSS. Адаптивная вёрстка и автоматизация." width="150" height="209" srcset="img/certificates/cert-html2@2x.jpg">
+                    </picture>
+                  </a>
+                </li>
+
+                <li class="education__certificate-item">
+                  <a class="education__certificate-wrapper" href="pdf/js1.pdf" target="_blank">
+                    <picture>
+                      <source type="image/webp" srcset="img/certificates/cert-js1.webp 1x, img/certificates/cert-js1@2x.webp 2x">
+                      <img class="education__image" src="img/certificates/cert-js1.jpg" alt="HTML и CSS. Профессиональная вёрстка сайтов #34" width="150" height="209" srcset="img/certificates/cert-js1@2x.jpg">
+                    </picture>
+                  </a>
+                </li>
+              </ul>
+              <button class="button button--border" data-accordeon-button>Показать сертификаты</button>
+            </div>
+          </li>
+          <li class="education__item">
+            <h3 class="education__year">2021</h3>
+            <div class="education__description">
+              <p class="education__text">Защита кандидатской диссертации</p>
+              <a class="button button--border" href="https://vak.minobrnauki.gov.ru/advert/100056783" с>Информация на сайте ВАК</a>
+            </div>
+          </li>
+
+          <li class="education__item">
+            <h3 class="education__year">2015-2019</h3>
+            <div class="education__description">
+              <p class="education__text">Аспирантура ФИЦ ФТМ</p>
+            </div>
+          </li>
+
+          <li class="education__item">
+            <h3 class="education__year">2008-2013</h3>
+            <div class="education__description">
+              <p class="education__text">
+                Новосибирский государственный университет <br>
+                Факультет Естественных Наук <br>
+                Специалист
+              </p>
+            </div>
+          </li>
+
+        </ul>
+      </section>
+
+      <section class="hobby">
+        <h2 class="visually-hidden">Мои хобби</h2>
+        <p class="hobby__text">В свободное время я увлекаюсь фотографией и рисованием, а еще катаюсь на каяке по рекам Алтая :D</p>
+        <a class="button button--border" href="https://vk.com/public216184576" target="_blank" rel="noopener noreferrer">Посмотреть фотографии</a>
+        <a class="button button--border" href="https://vk.com/whentimegoescrazy" target="_blank" rel="noopener noreferrer">Посмотреть рисунки</a>
+      </section>
+    </main>
+
+    <!-- footer  -->
+    <footer class="page__footer footer">
+      <div class="container">
+        <h2 class="visually-hidden">Copyright</h2>
+        <p class="footer__copyright">
+          <svg width="26" height="26">
+            <use href="img/icons/stack.svg#icon-copyright"></use>
+          </svg>
+          <span>Дизайн и разработка: Александра Цидулко, 2023</span>
+        </p>
+      </div>
+    </footer>
+
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>
