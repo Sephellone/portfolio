@@ -82,107 +82,115 @@
     <!-- main  -->
     <main class="page__main about-page">
       <section class="bio">
-        <div class="bio__decription">
-          <h1 class="bio__title">Меня зовут Александра Цидулко, я&nbsp;начинающий фронтенд разработчик.</h1>
-          <p class="bio__text">У&nbsp;меня всегда вызывали интерес web-технологии, и&nbsp;год назад я&nbsp;решила связать с&nbsp;ними свою профессиональную деятельность.</p>
-          <p class="bio__text">Наверное, лучше всего в&nbsp;жизни у&nbsp;меня получается учиться новому, поэтому обучение на&nbsp;курсе &laquo;фронтенд-разработчик&raquo; прошло как увлекательное приключение.</p>
-          <p class="bio__text">Сейчас я&nbsp;продолжаю развиваться, узнавать новые подходы к&nbsp;разработке и&nbsp;пробовать применять их&nbsp;в&nbsp;своих проектах.</p>
-          <p class="bio__text">Несмотря на&nbsp;всегда присутствоваший у&nbsp;меня интерес к&nbsp;IT, и&nbsp;web в&nbsp;частности, при поступлении в&nbsp;университет я&nbsp;выбрала факультет естественных наук, успешно окончила специалитет по&nbsp;специальности &laquo;молекулярная биология&raquo;, аспирантуру по&nbsp;специальности &laquo;биохимия&raquo; и&nbsp;защитила кандидатскую диссертацию. После чего решила кардинально сменить направление работы, и&nbsp;выбрала фронтенд разработку.</p>
-          <p class="bio__text bio__text--accent">Новый день&nbsp;&mdash; новые возможности :D</p>
-        </div>
+        <div class="container bio__container">
+          <div class="bio__description">
+            <h1 class="bio__title">Меня зовут Александра, <br> я&nbsp;начинающий фронтенд разработчик.</h1>
+            <p class="bio__text">У&nbsp;меня всегда вызывали интерес web-технологии, и&nbsp;год назад я&nbsp;решила связать с&nbsp;ними свою профессиональную деятельность.</p>
+            <p class="bio__text">Наверное, лучше всего в&nbsp;жизни у&nbsp;меня получается учиться новому, поэтому обучение на&nbsp;курсе &laquo;фронтенд-разработчик&raquo; прошло как увлекательное приключение.</p>
+            <p class="bio__text">Сейчас я&nbsp;продолжаю развиваться, узнавать новые подходы к&nbsp;разработке и&nbsp;пробовать применять их&nbsp;в&nbsp;своих проектах.</p>
+            <p class="bio__text">Несмотря на&nbsp;всегда присутствоваший у&nbsp;меня интерес к&nbsp;IT, и&nbsp;web в&nbsp;частности, при поступлении в&nbsp;университет я&nbsp;выбрала факультет естественных наук, успешно окончила специалитет по&nbsp;специальности &laquo;молекулярная биология&raquo;, аспирантуру по&nbsp;специальности &laquo;биохимия&raquo; и&nbsp;защитила кандидатскую диссертацию. После чего решила кардинально сменить направление работы, и&nbsp;выбрала фронтенд разработку.</p>
+            <p class="bio__text bio__text--accent">Новый день&nbsp;&mdash; новые возможности :D</p>
+          </div>
 
-        <div class="bio__photo-wrapper">
-          <picture>
-            <source type="image/webp" srcset="img/about-photo.webp 1x, img/about-photo@2x.webp 2x">
-            <img class="bio__photo" src="img/about-photo.jpg" alt="Автопортрет." width="420" height="550" srcset="img/about-photo@2x.jpg 2x">
-          </picture>
+          <div class="bio__photo-wrapper">
+            <picture>
+              <source type="image/webp" srcset="img/about-photo.webp 1x, img/about-photo@2x.webp 2x">
+              <img class="bio__photo" src="img/about-photo.jpg" alt="Автопортрет." width="420" height="550" srcset="img/about-photo@2x.jpg 2x">
+            </picture>
+          </div>
         </div>
       </section>
 
       <section class="stack">
-        <h2 class="about-page__title stack__title">Мой стек технологий</h2>
-        <ul class="stack__list">
-          <li class="stack__item">HTML5</li>
-          <li class="stack__item">CSS3 (sass / scss)</li>
-          <li class="stack__item">адаптивная верстка, кроссбраузерная верстка, БЭМ</li>
-          <li class="stack__item">JavaScript (ES5 / ES6)</li>
-          <li class="stack__item">Git, GitHub</li>
-          <li class="stack__item">Figma, Photoshop, Illustrator</li>
-        </ul>
+        <div class="container">
+          <h2 class="about-page__title stack__title">Мой стек технологий</h2>
+          <ul class="stack__list">
+            <li class="stack__item">HTML5</li>
+            <li class="stack__item">CSS3 (sass / scss)</li>
+            <li class="stack__item">адаптивная верстка, кроссбраузерная верстка, БЭМ</li>
+            <li class="stack__item">JavaScript (ES5 / ES6)</li>
+            <li class="stack__item">Git, GitHub</li>
+            <li class="stack__item">Figma, Photoshop, Illustrator</li>
+          </ul>
+        </div>
       </section>
 
       <section class="education">
-        <h2 class="about-page__title">Образование</h2>
-        <ul class="education__list">
-          <li class="education__item">
-            <h3 class="education__year">2022-2023</h3>
-            <div class="education__description" data-accordeon-element>
-              <p class="education__text">Онлайн курс HTML academy <br>Профессия “Фронтенд-разработчик”</p>
-              <ul class="education__certificates" data-accordeon-content>
-                <li class="education__certificate-item">
-                  <a class="education__certificate-wrapper" href="pdf/html.pdf" target="_blank">
-                    <picture>
-                      <source type="image/webp" srcset="img/certificates/cert-html1.webp 1x, img/certificates/cert-html1@2x.webp 2x">
-                      <img class="education__image" src="img/certificates/cert-html1.jpg" alt="HTML и CSS. Профессиональная вёрстка сайтов." width="150" height="209" srcset="img/certificates/cert-html1@2x.jpg">
-                    </picture>
-                  </a>
-                </li>
+        <div class="container">
+          <h2 class="about-page__title">Образование</h2>
+          <ul class="education__list">
+            <li class="education__item">
+              <h3 class="education__year">2022-2023</h3>
+              <div class="education__description" data-accordeon-element>
+                <p class="education__text">Онлайн курс HTML academy <br>Профессия “Фронтенд-разработчик”</p>
+                <ul class="education__certificates nojs" data-accordeon-content>
+                  <li class="education__certificate-item">
+                    <a class="education__certificate-wrapper" href="pdf/html1.pdf" target="_blank">
+                      <picture>
+                        <source type="image/webp" srcset="img/certificates/cert-html1.webp 1x, img/certificates/cert-html1@2x.webp 2x">
+                        <img class="education__image" src="img/certificates/cert-html1.jpg" alt="HTML и CSS. Профессиональная вёрстка сайтов." width="150" height="209" srcset="img/certificates/cert-html1@2x.jpg">
+                      </picture>
+                    </a>
+                  </li>
 
-                <li class="education__certificate-item">
-                  <a class="education__certificate-wrapper" href="pdf/html1.pdf" target="_blank">
-                    <picture>
-                      <source type="image/webp" srcset="img/certificates/cert-html2.webp 1x, img/certificates/cert-html2@2x.webp 2x">
-                      <img class="education__image" src="img/certificates/cert-html2.jpg" alt="HTML и CSS. Адаптивная вёрстка и автоматизация." width="150" height="209" srcset="img/certificates/cert-html2@2x.jpg">
-                    </picture>
-                  </a>
-                </li>
+                  <li class="education__certificate-item">
+                    <a class="education__certificate-wrapper" href="pdf/html2.pdf" target="_blank">
+                      <picture>
+                        <source type="image/webp" srcset="img/certificates/cert-html2.webp 1x, img/certificates/cert-html2@2x.webp 2x">
+                        <img class="education__image" src="img/certificates/cert-html2.jpg" alt="HTML и CSS. Адаптивная вёрстка и автоматизация." width="150" height="209" srcset="img/certificates/cert-html2@2x.jpg">
+                      </picture>
+                    </a>
+                  </li>
 
-                <li class="education__certificate-item">
-                  <a class="education__certificate-wrapper" href="pdf/js1.pdf" target="_blank">
-                    <picture>
-                      <source type="image/webp" srcset="img/certificates/cert-js1.webp 1x, img/certificates/cert-js1@2x.webp 2x">
-                      <img class="education__image" src="img/certificates/cert-js1.jpg" alt="HTML и CSS. Профессиональная вёрстка сайтов #34" width="150" height="209" srcset="img/certificates/cert-js1@2x.jpg">
-                    </picture>
-                  </a>
-                </li>
-              </ul>
-              <button class="button button--border" data-accordeon-button>Показать сертификаты</button>
-            </div>
-          </li>
-          <li class="education__item">
-            <h3 class="education__year">2021</h3>
-            <div class="education__description">
-              <p class="education__text">Защита кандидатской диссертации</p>
-              <a class="button button--border" href="https://vak.minobrnauki.gov.ru/advert/100056783" с>Информация на сайте ВАК</a>
-            </div>
-          </li>
+                  <li class="education__certificate-item">
+                    <a class="education__certificate-wrapper" href="pdf/js1.pdf" target="_blank">
+                      <picture>
+                        <source type="image/webp" srcset="img/certificates/cert-js1.webp 1x, img/certificates/cert-js1@2x.webp 2x">
+                        <img class="education__image" src="img/certificates/cert-js1.jpg" alt="HTML и CSS. Профессиональная вёрстка сайтов #34" width="150" height="209" srcset="img/certificates/cert-js1@2x.jpg">
+                      </picture>
+                    </a>
+                  </li>
+                </ul>
+                <button class="button button--border about-page__button" data-accordeon-button>Показать сертификаты</button>
+              </div>
+            </li>
+            <li class="education__item">
+              <h3 class="education__year">2021</h3>
+              <div class="education__description">
+                <p class="education__text">Защита кандидатской диссертации</p>
+                <a class="button button--border about-page__button" href="https://vak.minobrnauki.gov.ru/advert/100056783">Информация на сайте ВАК</a>
+              </div>
+            </li>
 
-          <li class="education__item">
-            <h3 class="education__year">2015-2019</h3>
-            <div class="education__description">
-              <p class="education__text">Аспирантура ФИЦ ФТМ</p>
-            </div>
-          </li>
+            <li class="education__item">
+              <h3 class="education__year">2015-2019</h3>
+              <div class="education__description">
+                <p class="education__text">Аспирантура ФИЦ ФТМ</p>
+              </div>
+            </li>
 
-          <li class="education__item">
-            <h3 class="education__year">2008-2013</h3>
-            <div class="education__description">
-              <p class="education__text">
-                Новосибирский государственный университет <br>
-                Факультет Естественных Наук <br>
-                Специалист
-              </p>
-            </div>
-          </li>
+            <li class="education__item">
+              <h3 class="education__year">2008-2013</h3>
+              <div class="education__description">
+                <p class="education__text">
+                  Новосибирский государственный университет <br>
+                  Факультет Естественных Наук <br>
+                  Специалист
+                </p>
+              </div>
+            </li>
 
-        </ul>
+          </ul>
+        </div>
       </section>
 
       <section class="hobby">
-        <h2 class="visually-hidden">Мои хобби</h2>
-        <p class="hobby__text">В свободное время я увлекаюсь фотографией и рисованием, а еще катаюсь на каяке по рекам Алтая :D</p>
-        <a class="button button--border" href="https://vk.com/public216184576" target="_blank" rel="noopener noreferrer">Посмотреть фотографии</a>
-        <a class="button button--border" href="https://vk.com/whentimegoescrazy" target="_blank" rel="noopener noreferrer">Посмотреть рисунки</a>
+        <div class="container">
+          <h2 class="visually-hidden">Мои хобби</h2>
+          <p class="hobby__text">В свободное время я увлекаюсь фотографией и рисованием, а еще катаюсь на каяке по рекам Алтая :D</p>
+          <a class="button button--border about-page__button" href="https://vk.com/public216184576" target="_blank" rel="noopener noreferrer">Посмотреть фотографии</a>
+          <a class="button button--border about-page__button" href="https://vk.com/whentimegoescrazy" target="_blank" rel="noopener noreferrer">Посмотреть рисунки</a>
+        </div>
       </section>
     </main>
 

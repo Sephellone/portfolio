@@ -1,0 +1,14 @@
+[data-accordeon-content] {
+  max-height: 0;
+  overflow: hidden;
+  transition: $trans-default;
+  transition-property: max-height;
+
+  &.nojs {
+    max-height: none;
+  }
+
+  &.open {
+    max-height: 1000px;
+  }
+}

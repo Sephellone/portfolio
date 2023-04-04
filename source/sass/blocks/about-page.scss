@@ -1,0 +1,20 @@
+.about-page__title {
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--color-text);
+}
+
+.about-page__button {
+  display: inline-flex;
+  min-width: 230px;
+  margin: 5px 0;
+  padding: 7px 20px;
+  text-transform: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
