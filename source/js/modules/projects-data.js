@@ -1,5 +1,16 @@
 const PROJECTS = [
   {
+    title: 'JS exercises',
+    labels: ['personal', 'html', 'javascript'],
+    image: 'img/projects/js.jpg',
+    alt: 'Сайт с небольшими полезными или не очень штуками, написанными на JavaScript.',
+    srcset: 'img/projects/js@2x.jpg 2x',
+    webp: 'img/projects/js.webp 1x, img/projects/js@2x.webp 2x',
+    website: 'https://sephellone.github.io/JS-exercises/',
+    github: 'https://github.com/Sephellone/JS-exercises'
+  },
+
+  {
     title: 'Supergym',
     labels: ['html-academy', 'html', 'javascript'],
     image: 'img/projects/supergym.jpg',
